@@ -1,22 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>测试广告 显示的 基础模版</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+        button{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 </head>
-<body>
-<a href="http://dssp.donews.com:7020/ssp/cl?reqid=dba94b10822711e797118b82ff658604&aid=169&mid=653&uid=19&slotid=95&pubid=123&coo=6d3425d0818f11e797118b82ff658604&isClkFre=0&nexturl=https%3A%2F%2Fitunes.apple.com%2FUS%2Fapp%2Fid1153461915%3Fls%3D1%26mt%3D8">donews</a>
-<a href="https://itunes.apple.com/US/app/id1153461915?ls=1&mt=8">itunes</a>
-<!--<iframe src="http://a3c93j.natappfree.cc/test/index2.html?_ijt=dkaur1rsaog9tj012ogtuqvupb"-->
-<iframe src="http://192.168.5.254:3000"
-        height=500 frameborder="0"></iframe>
-<!--<img src="http://uri6.com/JzUje2" alt="">-->
 
-<!--<img src="http://r.yy.com/aay2Ij" alt="">-->
+<body>
+
+<h1>12312312312321</h1>
+<a href="https://itunes.apple.com/US/app/id1153461915?ls=1&mt=8">aaaaaa</a>
+<button>aaa</button>
+<!--<script src="../src/mobile_sdk.js"></script>-->
+<script src="http://dssp.donews.com/170214/3/1.html" type="application/javascript"></script>
 <script>
-    console.log(11111,self.frameElement)
-    console.log(22222,window)
+    var btn = document.querySelector("button")
+    console.log(btn)
+    console.log(document)
+    console.log(parent.window)
+    console.log(33333,self.frameElement)
+    console.log(44444,self.frameElement&&self.frameElement.tagName =="IFRAME")
+    
+
+    console.log(window)
+    btn.onclick = function () {
+        console.log(111)
+        parent.window.location= 'http://dssp.donews.com:7020/ssp/cl?reqid=79d1d5a0823211e797118b82ff658604&aid=169&mid=653&uid=19&slotid=95&pubid=123&coo=6d3425d0818f11e797118b82ff658604&isClkFre=0&nexturl=https%3A%2F%2Fitunes.apple.com%2FUS%2Fapp%2Fid1153461915%3Fls%3D1%26mt%3D8'
+//        window.location.href = 'https://itunes.apple.com/US/app/id1153461915?ls=1&mt=8'
+//        var xhr = new XMLHttpRequest();
+//        xhr.open("GET", "https://itunes.apple.com/US/app/id1153461915?ls=1&mt=8");
+//        xhr.onreadystatechange = function(){
+//            if(xhr.readyState == 4){
+//                if(xhr.status == 200){
+//                    var data = xhr.responseText
+//                    console.log(data)
+////                    var iframe = document.createElement("iframe");
+////                    iframe.innerHTML = data;
+////                    parent.document.body.appendChild(iframe);
+//                }else{
+//                    alert("error");
+//                }
+//            }
+//        }
+//        xhr.send(null);
+    }
+
 </script>
+<script id="OTUxNTAwMzYyNTEy">
+
+    (function () {
+        var s = "taihe_" + Math.random().toString(36).slice(2);
+        var sc = document.getElementById("OTUxNTAwMzYyNTEy");
+        var taiheDiv = document.createElement("div");
+        sc.parentNode.appendChild(taiheDiv);
+        taiheDiv.id = s;
+        (window.slotstailhe = window.slotstailhe || []).push({
+            id: "95",
+            pubid: "123",//123:test
+            container: s,
+            size: "640,200",
+            flow: "1",
+//      display: "inlay-fix",
+            display: "bottom-banner",
+//      display: "top-banner",
+        });
+    })();
+
+    document.querySelectorAll('a').forEach(function(a){
+        a.onclick = function(e){
+        e.preventDefault()
+    }
+    })
+</script>
+
+<h2>飞舞房客无惧疯狂了jew了解弗兰克文件房价未来将</h2>
+
 </body>
 </html>
